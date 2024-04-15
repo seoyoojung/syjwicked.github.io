@@ -1,0 +1,304 @@
+@charset 'uft-8';
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eulyoo1945-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+html,body{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: bottom;}
+address{font-style: normal;}
+button{border: none; background: transparent;}
+
+#wrap{
+	width: 100%;
+	min-width: 1100px;
+}
+
+.boxalign{
+	width: 1100px;
+	margin: auto;
+}
+
+header{
+	overflow: hidden;
+	padding: 5rem 0;
+	background: #000;
+}
+
+#logo{
+	float: left;
+
+}
+#logo h1{}
+#logo h1 a{}
+#logo h1 a img{
+	width: 200px;
+}
+
+nav{
+	float: right;
+}
+nav ul{
+	overflow: hidden;
+}
+nav ul li{
+	font-family: 'Pretendard-Regular';
+	float: left;
+	margin-left: 4rem;
+/*	ㄴ 메뉴 사이 간격을 왼쪽으로 여백줌*/
+}
+nav ul li a{
+	display: block;
+/*	ㄴ a태그는 inline속성이므로 block속성으로 바꿔준다.*/
+	font-weight: bold;
+	font-size: 1.7rem;
+	padding: 1.5rem 0 0.5rem;
+	color: #fff;
+	transition: 0.3s;
+}
+
+nav ul li a::after{
+	display: block;
+	content: '';
+	border-bottom: 2px solid #99bd26;
+	width: 0;
+	transition: 0.3s;
+	margin: auto;
+	padding-bottom: 0.5rem;
+	
+}
+
+nav ul li a:hover{
+/*	border-bottom: 5px solid;*/
+	color: #99bd26;
+}
+
+nav ul li a:hover::after{
+	width: 100%;
+}
+
+
+main{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	background: #000;
+	overflow: hidden;
+}
+
+#icon{}
+#icon img{
+	width: 100%;
+}
+#icon button{
+	width: 50px;
+	height: 50px;
+	position: absolute; top: 45%;
+}
+
+#icon .prev{
+	background: url(Wicked_l.png) no-repeat;
+	background-size: contain;
+	top: 45%; left: 370px;
+}
+#icon .next{
+	background: url(Wicked_r.png) no-repeat;
+	background-size: contain;
+	top: 45%; right: 370px;
+}
+
+#icon .slide{
+	background: url(Wicked_icon_slide.png) no-repeat;
+	background-size: contain;
+	top: 440px; left:50%;
+	background-size: 60px;
+	transform: translateX(-50%);
+}
+
+.bg{
+	background: url(wicked_b_2.jpg);
+	width: 100%; height: 470px;
+	transition: 0.5s;
+}
+
+.text{
+	position: absolute;
+/*	top: 0; bottom: 0; left: 10%;*/
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	background: rgba(0,0,0,0.80);
+	color: #fff;
+	padding: 3rem;
+	padding-top: 3rem;
+}
+.text h2{
+	font-family: 'Eulyoo1945-SemiBold';
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: #99bd26;
+}
+.text p{
+	font-family: 'Pretendard-Regular';
+	font-size: 1.2rem;
+	line-height: 2.1rem;
+}
+.text a{
+	font-family: 'Pretendard-Regular';
+	display: inline-block;
+	padding: 1rem;
+	margin-top: 2rem;
+	border: 1px solid #fff;
+	letter-spacing: 1.5px;
+}
+
+.text a:hover{
+	font-family: 'Pretendard-Regular';
+	background: #99bd26;
+	color: #000;
+	border: 1px solid #99bd26;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+
+main:hover .bg{
+	transform: scale(1.1);
+}
+
+section{
+	background: #99bd26;
+	padding: 5rem;
+}
+
+section ul{
+	overflow: hidden;
+	width: 920px;
+	margin: auto;
+}
+section ul li{
+	float: left;
+	width: 290px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+section ul li+li{
+	margin-left: 25px;
+}
+
+section ul li a{
+}
+
+section ul li a .imgcover{}
+.imgcover img{
+	transition: 0.3s;
+}
+
+section ul li a .textcover{
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	text-align: left;
+	background: rgba(0,0,0,0.80);
+	color: #fff;
+	font-size: 1.3rem;
+	padding: 20px;
+	letter-spacing: -1px;
+	line-height: 1.7;
+	float: left;
+}
+
+section ul li a .you{
+	background: url(btn_link.png);
+	width: 20px; height: 20px;
+	background-size: 40px;
+	float: left;
+	transition: 0.3s;
+}
+
+section ul li a .ytext{
+	font-family: 'Pretendard-Regular';
+	float: left;
+	font-size: 1.1rem;
+	margin-left: 1rem;
+	letter-spacing: 1px;
+}
+
+section ul li a .ftextcover{
+	font-family: 'Eulyoo1945-SemiBold';
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%; height: 50px;
+	text-align: left;
+	color: #99bd26;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	padding-bottom: 100px;
+	padding-left: 20px;
+}
+
+section ul li:hover img{
+	transform: scale(1.1);
+}
+section ul li:hover .you{
+	background-position: right;
+}
+
+footer{
+	background: #000;
+	text-align: center;
+	padding: 3rem 0 0;
+	font-size: 1.2rem;
+}
+
+footer ul{
+	overflow: hidden;
+	width: 250px;
+	margin: auto;
+}
+footer ul li{
+	float: left;
+	padding-left: 2rem;
+}
+footer ul li a{
+}
+
+footer ul li a img{
+	display: inline-block;
+	height: 25px;
+}
+
+footer p{
+	color: #fff;
+	margin-top: 1rem;
+}
+
+footer address{
+	color: #99bd26;
+	padding-bottom: 3rem;
+	
+}
+
